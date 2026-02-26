@@ -13,4 +13,4 @@ Cílem bylo navrhnout moderní, responzivní a vizuálně přitažlivý web, kte
 [Live web](https://radekminol77.github.io/projekt-klient/)
 
 ## Screenshot
-![Screenshot homepage](images/projekt-klient.png)
+![Screenshot homepage](projekt-klient.png)
