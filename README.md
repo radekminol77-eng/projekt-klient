@@ -5,15 +5,12 @@ Cílem bylo navrhnout moderní, responzivní a vizuálně přitažlivý web, kte
 
 ## Technologie
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 - GitHub Pages (pro demo, pokud je web veřejný)
 
 ## Live demo
-Pokud je web veřejně dostupný, otevři tento odkaz:  
 [Live web](https://radekminol77.github.io/projekt-klient/)
 
 ## Screenshot
-Níže je náhled hlavní stránky:
-
-![Screenshot homepage](images/homepage.png)
+![Screenshot homepage](images/projekt-klient.png)
