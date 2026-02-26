@@ -1,4 +1,4 @@
-# Projekt: Firemní prezentace
+# Portfolio Web –Firemní prezentace
 
 Tento web byl vytvořen jako prezentační stránka pro klienta.  
 Cílem bylo navrhnout moderní, responzivní a vizuálně přitažlivý web, který prezentuje služby a kontaktní informace firmy.
