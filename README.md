@@ -9,7 +9,7 @@ Cílem bylo navrhnout moderní, responzivní a vizuálně přitažlivý web, kte
 - JavaScript
 
 ## Live demo
-[Live web](https://radekminol77.github.io/projekt-klient/)
+[Live web](https://radekminol77-eng.github.io/projekt-klient/)
 
 ## Screenshot
 ![Screenshot homepage](projekt-klient.png)
