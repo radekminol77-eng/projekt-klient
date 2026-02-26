@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">  
+  <meta charset="UTF-8">
+    <title>TK DAI | Interiéry </title>
+  <meta name="description" content="Portfolio interiérů od TK DAI – moderní kuchyně, obývací pokoje, ložnice a další. Podívejte se na ukázky realizací interiérů.">
+  <meta name="keywords" content="interiéry, návrh interiéru, moderní interiér, bytový design, interiérový design, kuchyně, obývací pokoj, ložnice">
+  <meta name="author" content="Tomáš Kroutil">
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="Tomáš Kroutil — Interiéry & Stavby">
+<meta property="og:description" content="Profesionální interiéry a stavební služby. Podívejte se na moje portfolio a projekty.">
+<meta property="og:image" content="https://www.tvadomena.cz/images/logo.jpg">
+<meta property="og:url" content="https://www.tvadomena.cz/">
+<meta property="og:site_name" content="Tomáš Kroutil — Interiéry & Stavby">
+
+<meta http-equiv="X-Frame-Options" content="DENY">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Moje logo"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html#about">O mně</a></li>
+    <li><a href="projekt1.html">Portfolio</a></li>
+    <li><a href="index.html#contact-form-section">Kontakt</a></li>
+  </ul>
+</nav>
+
+
+<!-- MOBILNÍ NAVBAR -->
+<nav class="mobile-navbar">
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+  </div>
+  
+  <!-- Burger ikona -->
+  <div class="burger">&#9776;</div>
+  
+  <!-- Odkazy pro mobil -->
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Domů</a></li>
+    <li><a href="index.html#about">O mně</a></li>
+    <li><a href="projekt1.html">Portfolio</a></li>
+    <li><a href="index.html#contact-form-section">Kontakt</a></li>
+  </ul>
+</nav>
+
+
+
+<header id="project-hero" class="fade-in-hero projekt1-hero">
+
+  <h1>Portfolio</h1>
+  <div class="arrow-container">
+    <div class="arrow"></div>
+    <span class="menu-label">Menu</span>
+    <div class="project-links">
+      <a href="projekt1.html" class="active">Interiéry</a>
+      <a href="projekt2.html">Architektura</a>
+      <a href="projekt3.html">Design</a>
+    </div>
+  </div>
+  <a href="#interiery" class="btn-cta">Prohlédnout galerii</a>
+</header>
+
+
+  <section id="interiery" class="interior-gallery"> 
+    <img src="images/projekt1/interier1.jpg" alt="Interiér 1" class="gallery-img">
+    <img src="images/projekt1/interier2.jpg" alt="Interiér 2" class="gallery-img">
+    <img src="images/projekt1/interier3.jpg" alt="Interiér 3" class="gallery-img">
+    <img src="images/projekt1/interier4.jpg" alt="Interiér 4" class="gallery-img">
+    <img src="images/projekt1/interier5.jpg" alt="Interiér 5" class="gallery-img">
+    <img src="images/projekt1/interier6.jpg" alt="Interiér 6" class="gallery-img">
+  </div>
+</section>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<footer>
+  <div class="footer-top">
+    <!-- Hlavní nabídka vlevo -->
+    <div class="footer-menu">
+      <h2>Hlavní nabídka</h2>
+      <ul class="footer-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#about">O mně</a></li>
+        <li><a href="index.html#contact">Kontakt</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Logo + kontakty uprostřed -->
+    <div class="footer-logo-contact">
+      <img src="images/logo.png" alt="Logo">
+      <div class="footer-contact">
+        <p>📞 +420 123 456 789</p>
+        <p>✉️ info@example.com</p>
+      </div>
+    </div>
+
+    <!-- Sociální sítě vpravo -->
+    <div class="footer-socials">
+      <h2>Sociální sítě</h2>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- Copyright dole uprostřed -->
+  <div class="footer-bottom">
+    © 2025 Tomáš Kroutil — Interiéry & Stavby
+  </div>
+</footer>
+<script>
+const headerH1 = document.querySelector("#project-hero h1");
+
+// spustíme animaci jen pokud přicházíme z index.html
+if (document.referrer.includes("index.html")) {
+  headerH1.classList.add("animate-once");
+} else {
+  // pokud ne, zajistíme, aby byla viditelná bez animace
+  headerH1.style.opacity = 1;
+  headerH1.style.transform = "translateY(0)";
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".burger");
+  const mobileNavLinks = document.querySelector(".mobile-nav-links");
+
+  if (!burger || !mobileNavLinks) return;
+
+  burger.addEventListener("click", () => {
+    mobileNavLinks.classList.toggle("active");
+  });
+
+  mobileNavLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNavLinks.classList.remove("active");
+    });
+  });
+});
+</script>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

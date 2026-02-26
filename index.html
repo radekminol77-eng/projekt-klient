@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  
+ <link rel="icon" type="image/png" href="images/logo.png">   
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<title>TK DAI | Design & Interiéry</title>
+ <meta name="description" content="TK DAI – profesionální návrhy interiérů, architektury a designu. Spojujeme estetiku s funkčností, abychom vytvořili prostor přesně pro vás.">
+  <meta name="keywords" content="interiéry, architektura, design, návrh interiéru, návrh domu, bytový design, moderní architektura, TK DAI">
+  <meta name="author" content="Tomáš Kroutil">
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Tomáš Kroutil — Interiéry & Stavby">
+<meta property="og:description" content="Profesionální interiéry a stavební služby. Podívejte se na moje portfolio a projekty.">
+<meta property="og:image" content="https://www.tvadomena.cz/images/logo.jpg">
+<meta property="og:url" content="https://www.tvadomena.cz/">
+<meta property="og:site_name" content="Tomáš Kroutil — Interiéry & Stavby">
+
+<meta http-equiv="X-Frame-Options" content="DENY">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- DESKTOP NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">O mně</a></li>
+    <li><a href="projekt1.html">Portfolio</a></li>
+    <li><a href="#contact-form-section">Kontakt</a></li>
+  </ul>
+</nav>
+
+<!-- MOBILNÍ NAVBAR -->
+<nav class="mobile-navbar">
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+  </div>
+  <div class="burger">&#9776;</div>
+</nav>
+
+<ul class="mobile-nav-links">
+    <li><a href="#about">O mně</a></li>
+    <li><a href="projekt1.html">Portfolio</a></li>
+    <li><a href="#contact-form-section">Kontakt</a></li>
+</ul>
+
+
+
+<!-- HERO / HLAVIČKA -->
+<header>
+    <h1>Tomáš Kroutil</h1>
+    <div class="header-line"></div>
+   <p class="hero-subtitle"><span>Design & Interiéry </span></p>
+    <a href="#portfolio" class="btn-cta">Moje projekty</a>
+
+</header>
+
+
+
+
+<!-- O MNĚ -->
+<section id="about">
+  <h2>O mně</h2>
+  <div class="about-content">
+    <img src="images/profil.jpg" alt="Jméno Příjmení" class="about-photo">
+    <p>Jsem kreativní člověk, který se věnuje interiérům, stavebním řešením a designu. </br>
+       Baví mě propojovat funkčnost s estetikou a hledat cesty, jak z prostoru vytěžit maximum.
+        Mám zkušenosti s menšími i většími projekty a ke každému přistupuji individuálně. </br>
+         Rád pracuji s detaily, protože právě ty dělají z domu skutečný domov.</p>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio-grid">
+    
+    <div class="card">
+      <a href="projekt1.html">
+        <img src="images/projekt1.jpg" alt="Projekt 1">
+        <div class="overlay">
+          <p>Interiéry</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="projekt2.html">
+        <img src="images/projekt2.jpg" alt="Projekt 2">
+        <div class="overlay">
+          <p>Architektura</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="projekt3.html">
+        <img src="images/projekt3.jpg" alt="Projekt 3">
+        <div class="overlay">
+          <p>Design</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact-form-section">
+  <h2>Kontakt</h2>
+  <p>Email: tvuj@email.cz</p>
+  <p>Telefon: +420 123 456 789</p>
+  <div class="contact-box">
+
+    <h3>Kontaktní formulář</h3>
+
+    <form id="contact-form" class="contact-form">
+  <input type="text" name="user_name" placeholder="Vaše jméno" required>
+  <input type="email" name="user_email" placeholder="Váš email" required>
+  <!-- honeypot pole proti spamu (skryté) -->
+<input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+  <textarea name="message" placeholder="Vaše zpráva" required></textarea>
+  <button type="submit">Odeslat</button>
+</form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <!-- Hlavní nabídka vlevo -->
+    <div class="footer-menu">
+      <h2>Hlavní nabídka</h2>
+      <ul class="footer-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="projekt1.html">Portfolio</a></li>
+        <li><a href="#about">O mně</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Logo + kontakty uprostřed -->
+    <div class="footer-logo-contact">
+      <img src="images/logo.png" alt="Logo">
+      <div class="footer-contact">
+        <p>📞 +420 123 456 789</p>
+        <p>✉️ info@example.com</p>
+      </div>
+    </div>
+
+    <!-- Sociální sítě vpravo -->
+    <div class="footer-socials">
+      <h2>Sociální sítě</h2>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- Copyright dole uprostřed -->
+  <div class="footer-bottom">
+    © 2025 - Radek Minol 
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // Inicializace EmailJS s tvým public key
+  emailjs.init("KFIMU5HPKpgnKi7ns");
+
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // zabrání reloadu stránky
+
+    emailjs.sendForm('service_1bajq3n', 'template_eyoqdn9', this)
+      .then(function() {
+        alert('Email byl odeslán!');
+        form.reset();
+      }, function(error) {
+        alert('Chyba při odesílání: ' + JSON.stringify(error));
+      });
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".burger");
+  const mobileNavLinks = document.querySelector(".mobile-nav-links");
+
+  if (!burger || !mobileNavLinks) return;
+
+  burger.addEventListener("click", () => {
+    mobileNavLinks.classList.toggle("active");
+  });
+
+  mobileNavLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNavLinks.classList.remove("active");
+    });
+  });
+});
+</script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
